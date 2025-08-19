@@ -50,14 +50,17 @@ Explanation: There is no subarray filled with 0. Therefore, we return 0.
 ---
 
 ## My Approach
-(Write your thought process, observations, invariants, edge cases, patterns.)
+Simple Problem with just a mathematical approach where we have to just count the number of continuous zeroes at a time. The number of subarrays using those zeroes is (cnt * (cnt + 1)) / 2. Whenever encountered a non zero number, we can just make count as 0 and update the answer. 
+The only edge case was when the array ended with 0. Easy to handle. 
 
 ## Complexity
-- Time: O(?)
-- Space: O(?)
+- Time: O(N)
+- Space: O(1)
 
 ## Alternate Approaches
 (Outline other viable solutions and when to prefer them.)
+The only approach which is the most efficient is already outlined above.
 
 ## Notes
 (Add proofs, pitfalls, and follow-ups.)
+None
