@@ -1,0 +1,20 @@
+# Ignore virtual environments
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# System files
+.DS_Store
+
+# Helper setup files you don’t want on GitHub
+README_SETUP.md
+add_problem.py
+leetcode_add.sh
+requirements.txt
+.env
+.env.example
