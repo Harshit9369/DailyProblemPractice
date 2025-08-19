@@ -9,19 +9,6 @@ Each problem is organized into a separate folder with the following contents:
 
 The goal of this repository is to maintain consistency in problem solving, track progress over time, and build a collection of solutions that can be referenced later.  
 
-## Structure
-DailyProblemPractice/
-│
-├── Problem-1/
-│ ├── README.md
-│ ├── Solution.java
-│
-├── Problem-2/
-│ ├── README.md
-│ ├── Solution.py
-│
-└── ...
-
 
 ## How to Use
 - Navigate to the problem folder to read the problem statement.  
