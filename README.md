@@ -11,16 +11,16 @@ The goal of this repository is to maintain consistency in problem solving, track
 
 ## Structure
 DailyProblemPractice/
-|
-|── Problem-1/
-|   ├── README.md
-|   └── Solution.java
-|
-|── Problem-2/
-|   ├── README.md
-|   └── Solution.py
-|
-|── ...
+│
+├── Problem-1/
+│ ├── README.md
+│ ├── Solution.java
+│
+├── Problem-2/
+│ ├── README.md
+│ ├── Solution.py
+│
+└── ...
 
 
 ## How to Use
