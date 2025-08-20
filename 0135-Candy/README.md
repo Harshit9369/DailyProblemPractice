@@ -1,4 +1,6 @@
-# 135. Candy
+# 135. Candy 
+
+### Mark
 
 **Difficulty:** Hard  
 **Tags:** Array, Greedy  
@@ -42,14 +44,14 @@ The third child gets 1 candy because it satisfies the above two conditions.
 ---
 
 ## My Approach
-(Write your thought process, observations, invariants, edge cases, patterns.)
+1. The first approach is to simply traverse from the left and store the value with respect to the left neighbor only. In the second traversal, we consider the right neighbor and then the sum is equal to the maximum of the right neighbor or the left neighbor.
+2. The second approach is "Slope Concept" based. We don't consider the peeks in the array differently. If we are moving in an upward direction, we can just take one extra from the previous one. If moving in the downward direction, we start with 1 in this case too and just take one more than the previous one because what matters is taking the correct sum. If down > peak, then it means that the peak was supposed to be the down value. Therefore, we add an extra (down - peak) to the sum. 
 
 ## Complexity
-- Time: O(?)
-- Space: O(?)
-
-## Alternate Approaches
-(Outline other viable solutions and when to prefer them.)
+- Time: O(N)
+- Space: O(1)
 
 ## Notes
-(Add proofs, pitfalls, and follow-ups.)
+Great Problem! The first approach is doable but the second approach is a little bit tough to think about. Solve it again and try to grasp the concept and depth of the problem. 
+- The problem shows how to think differently and how we can simply approach a difficult problem like this by just thinking a little out of the box. 
+
