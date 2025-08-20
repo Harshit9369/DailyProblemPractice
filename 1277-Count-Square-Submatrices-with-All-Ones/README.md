@@ -51,14 +51,16 @@ Total number of squares = 6 + 1 = 7.
 ---
 
 ## My Approach
-(Write your thought process, observations, invariants, edge cases, patterns.)
+1. The first and most intuitive solution is to just take the sum of all the possible subsquares and check whether that sum is equal to the square of the length of that particular subsquare. This solution takes O(N^5) time complexity. 
+2. The second solution I could think of is taking the prefix sum of the elements and then using that to optimize the two inner for loops of the first approach and hence this solution takes a time complexity of O(N^3). 
+3. The last and most optimal solution is the approach using DP. In this approach, firstly we form the base case which is when the first row and column consist of 1s, then the subsquares of length 1 have 1 stored in the dp matrix. After that, during tabulation, if the ith and jth element of the matrix is 1, then in the dp matrix, we store the min of the previous neighbours ((i-1, j), (i, j-1), (i-1, j-1)) + 1. This stores the length of the subsquare at the bottom right cell of that particular subsquare. 
 
 ## Complexity
-- Time: O(?)
-- Space: O(?)
+- Time: O(N^2)
+- Space: O(N^2)
 
 ## Alternate Approaches
-(Outline other viable solutions and when to prefer them.)
+The only viable solution is the DP one and it works perfectly fine with all the cases. 
 
 ## Notes
-(Add proofs, pitfalls, and follow-ups.)
+- Do this problem once again to practice the DP concept of this problem. Start with the memoized approach and then move to tabulation. 
