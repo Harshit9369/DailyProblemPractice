@@ -35,14 +35,9 @@ Output: 2
 ---
 
 ## My Approach
-(Write your thought process, observations, invariants, edge cases, patterns.)
+Take the maximum of both the left subtree and the right subtree and add 1 to the result. 
 
 ## Complexity
-- Time: O(?)
-- Space: O(?)
+- Time: O(N)
+- Space: O(N) -> Auxiliary Stack Space
 
-## Alternate Approaches
-(Outline other viable solutions and when to prefer them.)
-
-## Notes
-(Add proofs, pitfalls, and follow-ups.)
