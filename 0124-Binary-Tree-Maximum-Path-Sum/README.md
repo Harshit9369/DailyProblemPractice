@@ -41,14 +41,8 @@ Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 
 ---
 
 ## My Approach
-(Write your thought process, observations, invariants, edge cases, patterns.)
+This problem is tackled just like the diameter of a tree is calculated. We can just calculate the maximum path sum for each particular subtree and the maximum of that. Whenever the sum is negative for any of the left or right subtree, we don't consider it coz it would make the sum even worse. Hence, we take max of 0 and the max left sum and the max right sum. After that, we take max sum of the three combinations. 
 
 ## Complexity
-- Time: O(?)
-- Space: O(?)
-
-## Alternate Approaches
-(Outline other viable solutions and when to prefer them.)
-
-## Notes
-(Add proofs, pitfalls, and follow-ups.)
+- Time: O(N)
+- Space: O(N)
