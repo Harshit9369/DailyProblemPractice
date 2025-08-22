@@ -38,14 +38,11 @@ Output: 1
 ---
 
 ## My Approach
-(Write your thought process, observations, invariants, edge cases, patterns.)
+To find the diameter of the tree, we have to take the max of every possible left height from a node and the right height from a node. For that, the easiest way is to track the left height and right height from the root and check for each node going left and right. 
 
 ## Complexity
-- Time: O(?)
-- Space: O(?)
+- Time: O(N)
+- Space: O(N) -> Auxiliary Stack Space. 
 
 ## Alternate Approaches
-(Outline other viable solutions and when to prefer them.)
-
-## Notes
-(Add proofs, pitfalls, and follow-ups.)
+Other approach can be the simple O(N^2) approach where we can just find the diameter from every possible node.
